@@ -1,0 +1,258 @@
+[
+  {
+    "id": "bottone_0",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Hey! Sei a Nova Gorica, giusto?"
+      },
+      {
+        "type": "text",
+        "desc": "Dai fammi sapere che non vedo l’ora di sentirti!"
+      }
+    ],
+    "open": {
+      "next": "risposta_libera_1"
+    },
+    "ai_fallback": {
+      "prompt": "Se l'utente risponde con qualcosa che conferma la sua presenza o interesse, prosegui con 'risposta_libera_1'. Altrimenti chiedi gentilmente di rispondere con un sì",
+      "next": "risposta_libera_1"
+    }
+  },
+  {
+    "id": "risposta_libera_1",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Come stai? Ti stai rilassando?"
+      }
+    ],
+    "open": {
+      "next": "risposta_libera_2"
+    },
+    "ai_fallback": {
+      "prompt": "Se il tono è positivo, neutro o rilassato, continua con 'bottone_1'. Se è molto negativo, suggerisci comunque di andare avanti con curiosità .",
+      "next": "risposta_libera_2"
+    }
+  },
+  {
+    "id": "risposta_libera_2",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Io sto alla grande e ho una novità da paura!"
+      },
+      {
+        "type": "text",
+        "desc": "Per prima cosa… un pochino di cose tecniche!"
+      },
+      {
+        "type": "text",
+        "desc": "Useremo questa piattaforma per comunicare: ci aiuterà a condividere più velocemente le informazioni."
+      },
+      {
+        "type": "text",
+        "desc": "È facile da usare: praticamente scegli e clicchi. Prova, Capo!\n\n⬇️⬇️⬇️"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Ho capito",
+        "next": "bottone_1"
+      },
+      {
+        "1": "Non chiamarmi \"Capo\"",
+        "next": "bottone_2"
+      }
+    ]
+  },
+  {
+    "id": "bottone_1",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Ottimo!"
+      },
+      {
+        "type": "text",
+        "desc": "Hai gli auricolari? Mettili che ti mando un vocale!"
+      },
+      {
+        "type": "text",
+        "desc": "Mi raccomando: ascolta tutto con attenzione perché sto per stupirti!"
+      },
+      {
+        "type": "audio",
+        "desc": "vocale_1.wav"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Ci sono, vai!",
+        "next": "bottone_3"
+      }
+    ]
+  },
+  {
+    "id": "bottone_2",
+    "content": [
+      {
+        "type": "text",
+        "desc": "... Come dici tu, Capo. 😏"
+      },
+      {
+        "type": "text",
+        "desc": "Hai gli auricolari? Mettili che ti mando un vocale!"
+      },
+      {
+        "type": "text",
+        "desc": "Mi raccomando: ascolta tutto con attenzione perché sto per stupirti!"
+      },
+      {
+        "type": "audio",
+        "desc": "vocale_1.wav"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Ci sono, vai!",
+        "next": "bottone_3"
+      }
+    ]
+  },
+  {
+    "id": "bottone_3",
+    "content": [
+      {
+        "type": "audio",
+        "desc": "vocale_2.wav"
+      },
+      {
+        "type": "text",
+        "desc": "🕵️‍♂️"
+      }
+    ],
+    "choices": [
+      {
+        "0": "E come fai a saperlo?",
+        "next": "bottone_4"
+      },
+      {
+        "1": "“Branca Detective”?",
+        "next": "bottone_4"
+      },
+      {
+        "2": "Mai sentito.",
+        "next": "bottone_4"
+      },
+      {
+        "3": "Come il calciatore anni ‘90?",
+        "next": "bottone_4"
+      }
+    ]
+  },
+  {
+    "id": "bottone_4",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Guarda qui!"
+      },
+      {
+        "type": "image",
+        "desc": "branca_detective.png"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Incredibile!",
+        "next": "bottone_5"
+      },
+      {
+        "1": "Che... bizzarra coincidenza!",
+        "next": "bottone_5"
+      },
+      {
+        "2": "Molto professionale...",
+        "next": "bottone_5"
+      },
+      {
+        "3": "😳",
+        "next": "bottone_5"
+      }
+    ]
+  },
+  {
+    "id": "bottone_5",
+    "content": [
+      {
+        "type": "text",
+        "desc": "Vero? Ma c’è di più! Mando vocale! 😎"
+      },
+      {
+        "type": "audio",
+        "desc": "vocale_3.wav"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Manda!",
+        "next": "bottone_7"
+      }
+    ]
+  },
+  {
+    "id": "bottone_7",
+    "content": [
+      {
+        "type": "image",
+        "desc": "giornali_sul_tavolo_IT.jpg"
+      },
+      {
+        "type": "text",
+        "desc": "Ed eccoti una versione consultabile con le traduzioni del caso (lunga vita ai traduttori automatici!): fammi sapere quando hai finito di leggere."
+      },
+      {
+        "type": "pdf",
+        "desc": "04-pregled-tiska-SL.pdf"
+      },
+      {
+        "type": "text",
+        "desc": "Fammi sapere quando hai letto!"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Letto tutto.",
+        "next": "bottone_8"
+      },
+      {
+        "1": "Cosa mi stai per chiedere?",
+        "next": "bottone_8"
+      },
+      {
+        "2": "🫣",
+        "next": "bottone_8"
+      }
+    ]
+  },
+  {
+    "id": "bottone_8",
+    "content": [
+      {
+        "type": "audio",
+        "desc": "vocale_4.wav"
+      },
+      {
+        "type": "image",
+        "desc": "branca_e_milli.png"
+      }
+    ],
+    "choices": [
+      {
+        "0": "Chi è quella con lui?",
+        "next": "bottone_11"
+      }
+    ]
+  }
+]
