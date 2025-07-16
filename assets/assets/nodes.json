@@ -83,7 +83,7 @@
       },
       {
         "type": "audio",
-        "desc": "vocale_1.wav"
+        "desc": "vocale_1.mp3"
       }
     ],
     "choices": [
@@ -110,7 +110,7 @@
       },
       {
         "type": "audio",
-        "desc": "vocale_1.wav"
+        "desc": "vocale_1.mp3"
       }
     ],
     "choices": [
@@ -125,7 +125,7 @@
     "content": [
       {
         "type": "audio",
-        "desc": "vocale_2.wav"
+        "desc": "vocale_2.mp3"
       },
       {
         "type": "text",
@@ -191,7 +191,7 @@
       },
       {
         "type": "audio",
-        "desc": "vocale_3.wav"
+        "desc": "vocale_3.mp3"
       }
     ],
     "choices": [
@@ -241,7 +241,7 @@
     "content": [
       {
         "type": "audio",
-        "desc": "vocale_4.wav"
+        "desc": "vocale_4.mp3"
       },
       {
         "type": "image",
