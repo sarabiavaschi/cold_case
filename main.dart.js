@@ -49531,7 +49531,7 @@ if(p==="audio"){p=a.a
 s=this.w.i(0,p)
 r=s===!0
 s=A.fz(r?B.LM:B.LO,q,q,q)
-return new A.dG(o,q,q,A.aSd(s,A.c8(r?"Pausa Audio":"Ascolta Audio",q,q,q,q,q,q),new A.aaE(this,r,"audio/"+p,a)),q)}else if(p==="image")return new A.dG(o,q,q,new A.tL(A.aUA(q,q,new A.wz("assets/images/"+a.a,q,q)),250,q,q,q,!1,q),q)
+return new A.dG(o,q,q,A.aSd(s,A.c8(r?"Pausa Audio":"Ascolta Audio",q,q,q,q,q,q),new A.aaE(this,r,"audio/"+p,a)),q)}else if(p==="image")return new A.dG(o,q,q,new A.tL(A.aUA(q,q,new A.wz("assets/images/"+a.a,q,q)),300,q,q,q,!1,q),q)
 else if(p==="pdf")return new A.dG(o,q,q,A.aSd(A.fz(B.LN,q,q,q),A.c8("Apri PDF",q,q,q,q,q,q),new A.aaF(this,a)),q)
 else{p=A.da(12)
 return new A.bO(n,new A.dG(o,q,q,A.cK(q,A.c8(a.a,q,q,q,A.hJ(q,q,B.l,q,q,q,q,q,q,q,q,15,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),B.p,q,q,new A.cJ(m,q,q,p,q,q,B.a5),q,q,B.KI,B.KK,q),q),q)}},
